@@ -1,8 +1,31 @@
-**Aplicativo de desenvolvimento próprio e puramente para fins didáticos.**
-Há pacotes externos que simplificam a validação de diversos documentos nacionais, escrevi esse código apenas com a finalidade de praticar.
-Em breve poderei adcionar novas funcionalidades (como uma interface gráfica ou implementar em uma plataforma web via framework).
+# CPF Tools
 
-Funcionalidades:
-Verifica se o CPF em questão é válido e informa a região que o documento pertence, caso contenha os 11 digitos e o mesmo seja inválido, o aplicativo retorna uma sugestão de número válido (experimente por exemplo informar os 9 primeiros digitos do seu número de cpf e outros 2 aleatórios no final, o aplicativo irá retornar o seu cpf corretamente). É possível também gerar um número de cpf completamente aleatório e válido.
-![image](https://user-images.githubusercontent.com/102473053/196559664-d366316e-9af2-40a3-8874-76da7a1ede28.png)
+## Notas da versão 2.0
 
+Nessa nova versão foi incluída uma interface gráfica através do PySimpleGUI, também é possível copiar o número gerado atráves de um clique no botão de copiar. No momento o aplicativo só foi testado em Windows, caso execute em outro S.O e não tenha os pacotes necessários o aplicativo poderá não funcionar.
+
+![image](https://user-images.githubusercontent.com/102473053/196800880-9a732fdf-c1d3-42be-af66-0cd8f7c4a5c8.png)
+
+## Features
+
+- Gera número de CPF aleatório e totalmente válido 
+- Verifica se o número digitado é válido
+- Sugere mudança no número verificado caso o mesmo seja inválido
+- Informa de qual região o número do documento pertence
+- Copiar o número gerado para o clipboard atráves de um simples clique
+
+## Pacotes e módulos
+
+Lista dos pacotes utilizados e a sua utilização no código:
+
+| Pacote | Utilização |
+| ------ | ------ |
+| os | Instala os pacotes externos caso a máquina não tenha |
+| random | Cria um número aleatório  |
+| pyperclip | Copia uma variável para o clipboard  |
+| pysimplegui | Cria uma janela |
+
+
+## License
+
+MIT
